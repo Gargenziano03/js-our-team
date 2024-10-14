@@ -40,8 +40,15 @@ const teamMembers = [
 ];
 
 // creare un ciclo for per ciclare nel array
+for (let i = 0; i < teamMembers.length; i++) {
+  const member = teamMembers[i];
+  console.log(member);
+  
+  // markup
 
-// markup
+  
+}
+
 
 
 
