@@ -56,7 +56,7 @@ for (let i = 0; i < teamMembers.length; i++) {
                         <spam>${email}<spam>
                     </div>
                 </div>`
-               
+                rowEl.innerHTML += markup;
               
 
 }
