@@ -46,14 +46,18 @@ for (let i = 0; i < teamMembers.length; i++) {
   console.log(memberEl);
   // markup
   const { name, role, email, img } = memberEl;
-  const markup = `<div class="col-4">
+  const markup = `<div class="col-4 pb-3">
                     <!--colonna-->
-                    <div class="card text-bg-dark">
+                    <div class="card text-bg-dark ">
                         <!--carta-->
-                        <img src="${img}" alt="">
+                        <div class="d-flex">
+                        <img width="100px" src="${img}" alt="">
+                        <div class="info ">
                         <h3>${name}</h3>
                         <spam>${role}</spam>
                         <spam>${email}<spam>
+                        </div>
+                        </div>
                     </div>
                 </div>`
                 rowEl.innerHTML += markup;
