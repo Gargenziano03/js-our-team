@@ -46,16 +46,20 @@ const teamMembers = [
     console.log(memberEl);
     // markup
     const { name, role, email, img } = memberEl;
-    const markup = `<div class="col-4 col-md-6 col-lg-12 pb-3">
-                      <!--colonna-->
-                      <div class="card text-bg-dark">
-                          <!--carta-->
-                          <img src="${img}" alt="">
-                          <h3>${name}</h3>
-                          <spam>${role}</spam>
-                          <spam>${email}<spam>
-                      </div>
-                  </div>`
+    const markup =`<div class="col-4 pb-3">
+                    <!--colonna-->
+                    <div class="card text-bg-dark ">
+                        <!--carta-->
+                        <div class="d-flex">
+                        <img width="100px" src="${img}" alt="">
+                        <div class="info ">
+                        <h3>${name}</h3>
+                        <spam>${role}</spam>
+                        <spam>${email}<spam>
+                        </div>
+                        </div>
+                    </div>
+                </div>`
                   rowEl.innerHTML += markup;
   }
   //Bonus
